@@ -25,11 +25,27 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   ]
 
   const scrollToSection = (href) => {
+    console.log('Scrolling to:', href)
     const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
+    console.log('Element found:', element)
+    
+    // Close mobile menu first
     setIsOpen(false)
+    
+    if (element) {
+      const offsetTop = element.offsetTop - 80 // Account for fixed navbar height
+      console.log('Scrolling to position:', offsetTop)
+      
+      // Use requestAnimationFrame for better performance
+      requestAnimationFrame(() => {
+        window.scrollTo({
+          top: Math.max(0, offsetTop), // Ensure we don't scroll to negative values
+          behavior: 'smooth'
+        })
+      })
+    } else {
+      console.log('Element not found for:', href)
+    }
   }
 
   return (
@@ -105,7 +121,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             height: isOpen ? 'auto' : 0,
           }}
           transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden bg-white dark:bg-dark-800 border-t border-gray-200 dark:border-dark-700"
+          className={`md:hidden overflow-hidden bg-white dark:bg-dark-800 border-t border-gray-200 dark:border-dark-700 ${
+            isOpen ? 'block' : 'hidden'
+          }`}
         >
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
