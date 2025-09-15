@@ -114,13 +114,13 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Get In Touch</h3>
               <div className="space-y-2">
                 <p className="text-gray-400">
-                  <span className="font-medium">Email:</span> shivam.jha@example.com
+                  <span className="font-medium">Email:</span> shivamjha8695@gmail.com
                 </p>
                 <p className="text-gray-400">
                   <span className="font-medium">Phone:</span> +91 7979761746
                 </p>
                 <p className="text-gray-400">
-                  <span className="font-medium">Location:</span> Pune, India
+                  <span className="font-medium">Location:</span> Hyderabad, India
                 </p>
               </div>
               <motion.a
