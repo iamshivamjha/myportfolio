@@ -124,10 +124,10 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📞 Contact
 
 Shivam Prakash Jha
-- Email: shivam.jha@example.com
+- Email: shivamjha8695@gmail.com
 - Phone: +91 7979761746
 - GitHub: [@iamshivamjha](https://github.com/iamshivamjha)
-- LinkedIn: [Shivam Jha](https://linkedin.com/in/shivam-jha)
+- LinkedIn: [Shivam Jha](https://www.linkedin.com/in/shivam-prakash-jha-1a7b78156/)
 
 ---
 
